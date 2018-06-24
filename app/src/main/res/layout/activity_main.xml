@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.soccerstatistics.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        tools:context="com.example.android.soccerstatistics.MainActivity">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textColor="#616161"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="TeamA"
+            android:textColor="#FF0000"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="TeamB"
+            android:textColor="#0000FF"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textColor="#616161"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        tools:context="com.example.android.soccerstatistics.MainActivity">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="0dp"
+            android:layout_weight="2"
+            android:textSize="55sp"/>
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:layout_weight="2"
+            android:textSize="55sp"/>
+    </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            tools:context="com.example.android.soccerstatistics.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="attemptsA"
+                android:text="attempt"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/team_a_attempts"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="45sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/team_b_attempts"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="45sp" />
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="attemptsB"
+                android:textSize="12sp"
+                android:text="attempt" />
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        tools:context="com.example.android.soccerstatistics.MainActivity">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="targetA"
+            android:textSize="12sp"
+            android:text="on target" />
+
+        <TextView
+            android:id="@+id/team_a_on_target"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/team_b_on_target"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="targetB"
+            android:textSize="12sp"
+            android:text="on target" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        tools:context="com.example.android.soccerstatistics.MainActivity">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="yellowA"
+            android:textSize="12sp"
+            android:background="#FFFF00"
+            android:text="yellow card" />
+        <TextView
+            android:id="@+id/team_a_yellow_card"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/team_b_yellow_card"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="yellowB"
+            android:textSize="12sp"
+            android:background="#FFFF00"
+            android:text="yellow card" />
+    </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            tools:context="com.example.android.soccerstatistics.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="redA"
+                android:textSize="12sp"
+                android:background="#FF0000"
+                android:text="red card" />
+            <TextView
+                android:id="@+id/team_a_red_card"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="45sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/team_b_red_card"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="45sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:onClick="redB"
+                android:background="#FF0000"
+                android:text="red card" />
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        tools:context="com.example.android.soccerstatistics.MainActivity">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="goalA"
+            android:text="goal" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="16dp"
+            android:onClick="goalB"
+            android:text="Goal" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        tools:context="com.example.android.soccerstatistics.MainActivity">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="reset"
+            android:text="RESET" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
